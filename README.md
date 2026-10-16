@@ -18,8 +18,6 @@ With the included fictional CSV exports, the app reconciles **35 invoices** and 
 
 ![Billing Reconciliation Demo after validating 35 invoices](docs/app-after-validation.png)
 
-Both screenshots were taken from the same application on Windows at the same window size, keeping text sizing, margins, and button spacing consistent.
-
 ## What it does
 
 1. **Reads and reconciles two exports:** compares invoice detail with the open-balance report, including missing invoices, mismatched totals, incorrect dates, and excluded paid invoices.
