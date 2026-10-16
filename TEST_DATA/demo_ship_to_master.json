@@ -1,0 +1,200 @@
+{
+  "ship to address 1__2=harborline cold storage | ship to address 2=4100 bayou parkway | ship to city=mobile: +1 (504) | ship zip=555-0142": {
+    "address_block": "Harborline Cold Storage\n4100 Bayou Parkway\nMarsh Point, LA 70999\nMobile: +1 (504) 555-0142",
+    "label": "Harborline Cold Storage",
+    "source": "Demo reference library",
+    "reference_only": false
+  },
+  "ship to address 1__2=harborline cold storage | ship to address 2=4100 bayou parkway | ship to city=mobile: +1 (985) | ship zip=555-0174": {
+    "address_block": "Harborline Cold Storage\n4100 Bayou Parkway\nMarsh Point, LA 70999\nATTE:Sam Patel\nMobile: +1 (985) 555-0174",
+    "label": "Harborline Cold Storage",
+    "source": "Demo reference library",
+    "reference_only": false
+  },
+  "ship to address 1__2=harborline cold storage | ship to address 2=3117 summit hwy | ship to city=(470) | ship zip=555-0186": {
+    "address_block": "Harborline Cold Storage\n3117 Summit Hwy\nFairmont, Georgia 30998\nATTN: Riley Chen\n(470) 555-0186",
+    "label": "Harborline Cold Storage",
+    "source": "Demo reference library",
+    "reference_only": false
+  },
+  "ship to address 1__2=polar peak ozark hills | ship to address 2=dana whitfield | ship to city=(479) | ship zip=555-0117": {
+    "address_block": "Polar Peak Ozark Hills\nDana Whitfield\n800 Route 9 South\nOzark Hills, AR 72999\n(479) 555-0117",
+    "label": "Polar Peak Ozark Hills",
+    "source": "Demo reference library",
+    "reference_only": false
+  },
+  "ship to address 1__2=glacier logstics bayharbor | ship to address 2=2250 dockside rd | ship to city=bay harbor | ship to state=tx | ship zip=77999": {
+    "address_block": "Glacier Logstics Bay Harbor\n2250 Dockside Road\nBay Harbor TX 77999\nATTN: Morgan Ellis\n281-555-0163",
+    "label": "Glacier Logstics Bay Harbor",
+    "source": "Demo reference library",
+    "reference_only": false
+  },
+  "ship to address 1__2=polar peak – fairmont, ga | ship to address 2=attn: jordan avery | ship to city=fairmont | ship to state=ga | ship zip=30998": {
+    "address_block": "POLAR PEAK – FAIRMONT, GA\nATTN: Jordan Avery\n888-555-0108\n1680 Orchard Rd.\nFairmont, GA 30998",
+    "label": "POLAR PEAK – FAIRMONT, GA",
+    "source": "Demo reference library",
+    "reference_only": false
+  },
+  "ship to address 1__2=polar peak – fairmont, ga | ship to address 2=1161 orchard rd. | ship to city=770 555 | ship zip=0129": {
+    "address_block": "POLAR PEAK – FAIRMONT, GA\n1161 Orchard Rd.\nFairmont, GA 30998\n770-555-0129",
+    "label": "POLAR PEAK – FAIRMONT, GA",
+    "source": "Demo reference library",
+    "reference_only": false
+  },
+  "ship to address 1__2=coastal cs | meridian cold | ship to address 2=106 foundry blvd. | ship to city=tel: | ship zip=19125550133": {
+    "address_block": "Coastal CS | Meridian Cold\n106 Foundry Blvd.\nPort Avery, GA 31995\nTel: 19125550133\nATTN: Taylor Brooks",
+    "label": "Coastal CS | Meridian Cold",
+    "source": "Demo reference library",
+    "reference_only": false
+  },
+  "ship to address 1__2=riverside cold storage - ga | ship to address 2=alex romero | ship to city=cedar bend | ship to state=ga | ship zip=31997": {
+    "address_block": "Riverside Cold Storage - GA\nAlex Romero\n912-555-0195\n1300 Heritage Way\nCedar Bend, GA 31997",
+    "label": "Riverside Cold Storage - GA",
+    "source": "Demo reference library",
+    "reference_only": false
+  },
+  "ship to address 1__2=polar peak lakeview | ship to address 2=2001 old mill road | ship to city=lakeview | ship to state=ga | ship zip=31996": {
+    "address_block": "POLAR PEAK LAKEVIEW\n2001 Old Mill Road\nLAKEVIEW, GA 31996",
+    "label": "POLAR PEAK LAKEVIEW",
+    "source": "Demo reference library",
+    "reference_only": false
+  },
+  "ship to address 1__2=glacier logistics pine ridge | ship to address 2=209 industrial drive | ship to city=jamie lawson": {
+    "address_block": "Glacier Logistics Pine Ridge\n209 Industrial Drive\nPine Ridge, AL 35999\n201-555-0123\nJamie Lawson",
+    "label": "Glacier Logistics Pine Ridge",
+    "source": "Demo reference library",
+    "reference_only": false
+  },
+  "library::b076ce68532b9f9c": {
+    "address_block": "Harborline Cold Storage\n4100 Bayou Parkway\nMarsh Point, LA 70999\nMobile: +1 (504) 555-0142",
+    "label": "Harborline Cold Storage",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::5e2eec5e71996f61": {
+    "address_block": "Harborline Cold Storage\n4100 Bayou Parkway\nMarsh Point, LA 70999\nATTE:Sam Patel\nMobile: +1 (985) 555-0174",
+    "label": "Harborline Cold Storage",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::e4e34527f6ab19d1": {
+    "address_block": "Harborline Cold Storage\n3117 Summit Hwy\nFairmont, Georgia 30998\nATTN: Riley Chen\n(470) 555-0186",
+    "label": "Harborline Cold Storage",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::374eb9131ec12210": {
+    "address_block": "Polar Peak Ozark Hills\nDana Whitfield\n800 Route 9 South\nOzark Hills, AR 72999\n(479) 555-0117",
+    "label": "Polar Peak Ozark Hills",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::c2fd2377739756a1": {
+    "address_block": "Glacier Logstics Bay Harbor\n2250 Dockside Road\nBay Harbor TX 77999\nATTN: Morgan Ellis\n281-555-0163",
+    "label": "Glacier Logstics Bay Harbor",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::23c06bdbf46444d9": {
+    "address_block": "POLAR PEAK – FAIRMONT, GA\nATTN: Jordan Avery\n888-555-0108\n1680 Orchard Rd.\nFairmont, GA 30998",
+    "label": "POLAR PEAK – FAIRMONT, GA",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::300c9f9a5fb898c8": {
+    "address_block": "POLAR PEAK – FAIRMONT, GA\n1161 Orchard Rd.\nFairmont, GA 30998\n770-555-0129",
+    "label": "POLAR PEAK – FAIRMONT, GA",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::8ea6b84c736adebc": {
+    "address_block": "Tundra Cold Storage\nCasey Morgan\nPhone: 770-555-0151\n3001 Summit Hwy\nFairmont, GA 30998",
+    "label": "Tundra Cold Storage",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::096a1a31fe0cacc4": {
+    "address_block": "Coastal CS | Meridian Cold\n106 Foundry Blvd.\nPort Avery, GA 31995\nTel: 19125550133\nATTN: Taylor Brooks",
+    "label": "Coastal CS | Meridian Cold",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::56805cbefc15eced": {
+    "address_block": "Riverside Cold Storage - GA\nAlex Romero\n912-555-0195\n1300 Heritage Way\nCedar Bend, GA 31997",
+    "label": "Riverside Cold Storage - GA",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::6ab276593440a071": {
+    "address_block": "Glacier Cedar Bend, GA\n101 PROGRESS DRIVE\nCEDAR BEND, GA 31997\nATTN: Alex Romero\n912-555-0112",
+    "label": "Glacier Cedar Bend, GA",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::be63caf89ebaed44": {
+    "address_block": "POLAR PEAK LAKEVIEW\n2001 Old Mill Road\nLAKEVIEW, GA 31996",
+    "label": "POLAR PEAK LAKEVIEW",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::7ec7b361375cb9d4": {
+    "address_block": "Glacier Logistics Pine Ridge\n209 Industrial Drive\nPine Ridge, AL 35999\n201-555-0123\nJamie Lawson",
+    "label": "Glacier Logistics Pine Ridge",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::00cd0c3789b7d12e": {
+    "address_block": "GLACIER Logistics - Pine Ridge\nAttn: Jamie Lawson\n209 Industrial Boulevard\nPine Ridge, AL 35999",
+    "label": "GLACIER Logistics - Pine Ridge",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::6a5d9a1430379b6d": {
+    "address_block": "Polar Peak Northgate\n5610 Commerce Road\nNorthgate, NC 28999\nATTN: Victoria Lane\nTel: (704) 555-0177",
+    "label": "Polar Peak Northgate",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::62e676aac03023bb": {
+    "address_block": "Ozark Refrigerated Svcs\n24 N D Street\nFort Granite, AR 72998\nATTN: Mary Holt\n479-555-0106",
+    "label": "Ozark Refrigerated Svcs",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::b5951ed0aa9e0b80": {
+    "address_block": "Interstate Cold Warehousing\n121 Harwood Drive\nBayside, VA 23999\nAttn: Janet Price\n757-555-0148",
+    "label": "Interstate Cold Warehousing",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::e2684ea22bd1bdca": {
+    "address_block": "Seabreeze Cold Storage\nAttn: Chris Webb/Pat Rowe\nTel: 904-555-0189\n2625 W. 5th. Street\nPort Royal, Florida 32999",
+    "label": "Seabreeze Cold Storage",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::9528f9456650e27b": {
+    "address_block": "Glacier Westfield\nAttn: Madison Cole\n3776 Valley Hwy\nWestfield, NC 28998",
+    "label": "Glacier Westfield",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::138c55de7898dc87": {
+    "address_block": "Pacific Port Cold\nLee Saetern\n575 Maritime Street\nBay City, CA 94999\n510-555-0110 EXT 209",
+    "label": "Pacific Port Cold",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::1b12ce268888d558": {
+    "address_block": "Vertical Freeze\n220 Nordic Way, GA\nElm Crossing, GA 31994\nUSA\n912 555 0131",
+    "label": "Vertical Freeze",
+    "source": "Demo reference library",
+    "reference_only": true
+  },
+  "library::22b753d76f99d09b": {
+    "address_block": "Southern Provisions\n400 Industrial Drive\nIronton, AL 35998\nATTN: Daniel Baker",
+    "label": "Southern Provisions",
+    "source": "Demo reference library",
+    "reference_only": true
+  }
+}

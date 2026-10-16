@@ -1,0 +1,30 @@
+{
+  "company_name": "Summit Label & Print",
+  "company_address_lines": [
+    "100 Example Parkway",
+    "Suite 100",
+    "Springfield, GA 30000"
+  ],
+  "company_phone": "555-555-0100",
+  "company_email": "billing@example.com",
+  "company_website": "www.example.com",
+  "customer_name": "Bluewater Foods Group",
+  "bill_to_lines": [
+    "Bluewater Foods International",
+    "500 Harbor Point Blvd",
+    "Suite 200",
+    "Riverton, GA 30999"
+  ],
+  "expected_packing_item_text": "Bluewater Packing and Handling",
+  "expected_packing_rate": 12.5,
+  "expected_packing_amount": 12.5,
+  "tax_label": "Sales Tax (6.00%)",
+  "customer_message": "Thank you for your business. We appreciate it very much.",
+  "amount_tolerance": 0.01,
+  "invoice_pdf_prefix": "Bluewater Open Invoices",
+  "balance_pdf_prefix": "Summit Label Open Balance",
+  "email_subject_prefix": "Bluewater Open Invoices",
+  "email_to": ["payables@example.com"],
+  "email_cc": ["buyer@example.com", "billing@example.com"],
+  "email_cc_display": "Buyer, Billing"
+}

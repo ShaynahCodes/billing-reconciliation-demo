@@ -1,0 +1,158 @@
+BILLING RECONCILIATION DEMO v2.3.3
+==================================
+
+Portfolio edition. All company, customer, address, contact, pricing, invoice,
+PO, and tracking data in this package is fictional sample data.
+
+OPEN THE BOT
+------------
+Double-click:
+
+    Billing Reconciliation Demo.pyw
+
+No Command Prompt is needed.
+
+WHAT CHANGED
+------------
+- BILLING RECONCILIATION DEMO title is centered.
+- Billing Period is centered directly underneath the title.
+- Removed the extra subtitle.
+- Removed the SELECT FILES / PDFS CREATED badge from the header.
+- Billing Detail and Open Balance file boxes are now the same visual height as Browse.
+- Ship To Review shows the invoice number in dark text.
+- Ship To instructions now say exactly which invoice to open in QuickBooks.
+- Manage Ship Tos now has search and a full multi-line address preview.
+- The bot is preloaded with a library of verified full Ship To blocks from
+  prior billing weeks (fictional sample library in this edition).
+- When QuickBooks splits a known Ship To slightly differently, the bot can safely
+  auto-match it only when one historical address is a clear unique match.
+- Invoice PDF sections now share one consistent left/right grid.
+- Numbers and currency are aligned consistently.
+- The Customer Open Balance PDF was tightened and aligned.
+
+SHIP TO STORAGE
+---------------
+Ship To addresses are stored as intact multi-line text blocks. Line breaks are
+preserved.
+
+Manage Ship Tos lets coworkers search the addresses and see the exact full block
+the bot knows.
+
+If the bot still encounters an address it cannot identify confidently, it asks
+for the full Ship To block instead of guessing.
+
+FIRST TEST
+----------
+Use the included TEST_DATA files for 09/14/2026-09/18/2026.
+
+Expected:
+35 Detail Invoices
+35 To Include
+$5,265.07 Balance Due
+$0.00 Payments / Credits
+0 Hard Errors
+0 Warnings
+
+All 13 Ship To signatures in the test week resolve without a review prompt:
+11 by direct lookup and 2 through the historical fuzzy-match path.
+
+PDF REVIEW
+----------
+After validation, generate the two billing PDFs and review them before sending.
+Outlook drafting remains disabled until the PDF layout is approved.
+
+
+V2.2 PDF DESIGN
+----------------
+The generated PDFs use the approved polished visual design.
+
+The layout is generated dynamically from the QuickBooks CSV data. The polished
+PDFs themselves are not required at runtime.
+
+
+V2.3 SCREEN TERMINOLOGY
+-----------------------
+Invoice Data
+    The QuickBooks export containing the information used to rebuild each
+    invoice: invoice number, date, PO, S.O. number, items, quantities, rates,
+    tracking text, Ship To clues, and other invoice fields.
+
+Open Balance
+    The QuickBooks export used to determine which invoices still have money
+    due and the current unpaid balance.
+
+Invoices Found
+    Number of invoices found in the Invoice Data export.
+
+Invoices Included
+    Number of those invoices that remain open and belong in this billing run.
+
+The Review area is now a checklist. The summary cards own the numbers so the
+same totals are not repeated throughout the screen.
+
+
+V2.3.1 BUTTON FLOW
+------------------
+All workflow buttons stay on screen.
+
+Before validation:
+- Manage Ship Tos: enabled
+- Validate Billing: enabled
+- Generate Billing PDFs: disabled
+- Open PDFs: disabled
+- Create Outlook Draft: disabled
+
+After successful validation:
+- Validate Billing remains enabled
+- Generate Billing PDFs becomes enabled
+
+After PDF creation:
+- Validate Billing and Generate Billing PDFs remain enabled
+- Open PDFs becomes enabled
+
+Review starts blank and fills in one validation check at a time.
+
+
+V2.3.2 WORKFLOW
+---------------
+The bottom row is now compact:
+
+Manage Ship Tos    Validate Billing    Generate Billing PDFs    Review PDFs    Create Outlook Draft
+
+Manage Ship Tos is a smaller utility action.
+The four billing-workflow buttons are equal width and spaced apart.
+
+Review begins blank. Validation shows each check one at a time at a slower pace.
+After each stage, Review tells the user the next action instead of repeating
+the dashboard totals.
+
+
+V2.3.3 RESPONSIVE UI
+--------------------
+The main footer and Ship To windows now protect their buttons from clipping when windows are resized. Review also uses larger spacing between completed workflow stages.
+
+
+CONFIGURATION
+-------------
+All company, customer, and email details live in config.json, including:
+company header/footer, Bill To block, expected packing item/rate, tax label,
+PDF filename prefixes, and Outlook To/CC recipients.
+
+GITHUB PORTFOLIO EDITION NOTES
+------------------------------
+- The clean fictional Ship To library is in TEST_DATA/demo_ship_to_master.json.
+- When the bot runs, a personal working copy is created under data/.
+- data/, logs/, and generated PDF files are intentionally ignored by Git.
+- The four main action buttons stay side by side in one row. Their width
+  adapts to screen size and display scaling; only very narrow windows get
+  shorter button captions.
+- The five automated tests can be run with:
+    py -m unittest discover -s tests -v
+- Screenshots and a pre-publication checklist are in docs/.
+
+V2.3.3 PORTFOLIO LAYOUT
+-----------------------
+The app is titled Billing Reconciliation Demo. Desktop workflow
+buttons match the original fixed width and right alignment.
+The toolbar stays in one horizontal row on smaller laptop displays,
+with shortened labels only on very narrow windows.

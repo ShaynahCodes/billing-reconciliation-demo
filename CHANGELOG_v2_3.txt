@@ -1,0 +1,23 @@
+Billing Reconciliation Demo v2.3
+
+User-facing release name: v2.3
+Internal build revision: 27
+
+Revision 27:
+- The executable Python window file is now permanently named:
+  Billing Reconciliation Demo.pyw
+- Future bot updates can keep the same launch filename while the internal build
+  revision changes.
+- Outlook compose, CC clipboard fallback, tracking handling, PDF generation,
+  Ship To review, and fixed workflow-button sizing remain unchanged.
+- Bundled test Invoice Data file remains:
+  TEST Invoice Data 09-14-2026 to 09-18-2026.csv
+
+Portfolio edition:
+- Company, customer, and email recipients moved from code into config.json.
+- Real data replaced with fictional sample data.
+
+Portfolio edition v2.3.3:
+- Keep all four workflow buttons on one row across supported window sizes.
+- Use measured Tk widget widths so Windows font scaling can fit the toolbar.
+- Update laptop README screenshot and documentation.

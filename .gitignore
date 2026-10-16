@@ -1,0 +1,28 @@
+# Generated billing packets and all PDF exports
+*.pdf
+output/
+generated/
+exports/
+
+# Local data are mutable; TEST_DATA/demo_ship_to_master.json is the clean fixture
+data/
+logs/
+
+# Python and editors
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary, backup, and local-only files
+*.tmp
+*.bak
+*~
+.env
+.env.*
