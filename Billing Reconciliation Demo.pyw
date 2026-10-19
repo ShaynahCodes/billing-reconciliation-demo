@@ -1395,6 +1395,11 @@ def save_history(rows):
     HISTORY_PATH.write_text(json.dumps(rows, indent=2), encoding="utf-8")
 
 
+def prior_runs_for_period(history, period_label):
+    """Return earlier PDF runs recorded for this billing period (duplicate-billing guard)."""
+    return [h for h in history if isinstance(h, dict) and h.get("period") == period_label]
+
+
 class BillingApp(tk.Tk):
     def __init__(self):
         super().__init__()
@@ -3441,7 +3446,7 @@ class BillingApp(tk.Tk):
 
         label = period_filename(self.result.period)
         history = load_history()
-        prior = [h for h in history if h.get("period") == label]
+        prior = prior_runs_for_period(history, label)
         if prior:
             last = prior[-1].get("generated_at", "previously")
             if not messagebox.askyesno(
