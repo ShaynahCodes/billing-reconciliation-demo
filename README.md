@@ -14,15 +14,17 @@ A Windows desktop automation, built with **Python and Tkinter**, that reconciles
 
 ## The problem
 
-Every week, one customer's open invoices had to be billed as a single packet. By hand that meant:
+Every week, one customer's open invoices are sent as a single billing packet. The documented manual process was entirely click-driven inside QuickBooks:
 
-1. Exporting two QuickBooks reports and comparing them line by line to find which invoices were still open
-2. Checking each invoice for the right packing and handling charge, tax and FedEx tracking number
-3. Working out each full Ship To address, which QuickBooks exports split across columns inconsistently
-4. Rebuilding every invoice and an open-balance summary as PDFs
-5. Writing the email with the right recipients, subject and attachments
+1. Open the customer in Customer Center and filter to invoices
+2. Open **each** invoice with an open balance, one at a time, tick *Print Later*, then save and close it
+3. Go to *Print Forms*, deselect everything, then re-select each of that customer's invoices by hand
+4. Print the batch to PDF, save it to a shared folder and name it by billing week
+5. Run the customer's Open Balance report for the date range, print it to PDF, save and name it
+6. Write the email: attach both PDFs, add the recipient and CC, type the subject and body
+7. Look everything over and send
 
-Done by hand, this took about two hours every week.
+This took about two hours every week. The only check was a final look before sending, so a wrong charge, a missing tracking number or an invoice left out of the batch depended on someone noticing.
 
 ## The solution
 
@@ -37,7 +39,7 @@ flowchart LR
     G --> H[Outlook draft<br/>person attaches and sends]
 ```
 
-The bot does the comparing, checking and formatting. A person handles the judgment calls: unclear addresses, missing tracking and the final send.
+The bot replaces the clicking with two report exports, and adds the checks the manual process never had. A person still handles the judgment calls: unclear addresses, missing tracking and the final send.
 
 ### Validation rules
 
