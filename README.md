@@ -24,7 +24,7 @@ Every week, one customer's open invoices are sent as a single billing packet. Th
 6. Write the email: attach both PDFs, add the recipient and CC, type the subject and body
 7. Look everything over and send
 
-This took about two hours every week. The only check was a final look before sending, so a wrong charge, a missing tracking number or an invoice left out of the batch depended on someone noticing.
+This took about two hours every week. The only check was a final review before sending, so catching a wrong charge, missing tracking number, or omitted invoice depended entirely on someone noticing it.
 
 ## The solution
 
@@ -39,7 +39,7 @@ flowchart LR
     G --> H[Outlook draft<br/>person attaches and sends]
 ```
 
-The bot replaces the clicking with two report exports, and adds the checks the manual process never had. A person still handles the judgment calls: unclear addresses, missing tracking and the final send.
+The automation replaces the clicking with two report exports, and adds the checks the manual process never had. A person still handles the judgment calls: unclear addresses, missing tracking and the final send.
 
 ### Validation rules
 
@@ -49,13 +49,13 @@ Every problem is sorted into one of three levels, so the reviewer knows exactly 
 |---|---|---|
 | **Stop** | PDFs can't be generated until it's fixed | Invoice total differs between the two reports · open invoice missing from Invoice Data · open balance higher than invoice total · wrong packing item, rate or amount · invoice dated outside the billing week · billing period isn't Monday–Friday · wrong customer · credit memo present · duplicate rows |
 | **Warning** | Allowed through, flagged for review | Missing tracking number · nonzero sales tax · missing or extra packing line |
-| **Pause for a person** | The bot asks instead of guessing | Ship To address with no confident unique match · week already billed (asks before generating again) |
+| **Pause for a person** | The automation asks instead of guessing | Ship To address with no confident unique match · week already billed (asks before generating again) |
 
 Paid invoices are excluded automatically, and partial payments are calculated from the original total and the current open balance.
 
 ### Ship To matching
 
-QuickBooks exports the same warehouse differently from week to week. The bot keeps a library of verified full address blocks and auto-matches only when one saved address is a clear, unique match. Two sites with the same company name and street are left for a person to choose. Every address a person confirms is remembered for future weeks.
+QuickBooks exports the same warehouse differently from week to week. The automation keeps a library of verified full address blocks and auto-matches only when one saved address is a clear, unique match. Two sites with the same company name and street are left for a person to choose. Every address a person confirms is remembered for future weeks.
 
 ## Application preview
 
@@ -97,7 +97,7 @@ The full walkthrough is in the [User Guide](docs/USER_GUIDE.md).
 py -m unittest discover -s tests -v
 ```
 
-15 tests run automatically on Windows with Python 3.10 and 3.12 on every push. Each failure-case test copies a clean sample export, introduces one realistic mistake and checks that the bot reports it at the right level:
+15 tests run automatically on Windows with Python 3.10 and 3.12 on every push. Each failure-case test copies a clean sample export, introduces one realistic mistake and checks that the automation reports it at the right level:
 
 - Clean 35-invoice week reconciles exactly
 - Amount mismatch, open balance above total, missing invoice, credit memo, wrong packing rate and out-of-week date all stop the run
